@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  color: #99d9f2;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111559;
+}
+
+html {
+  width: 414px;
+  height: 896px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body div {
+  width: 100%;
+  display: flex;
+}
+body #header {
+  height: 10%;
+}
+body #header a {
+  font-size: 3rem;
+  margin: 2%;
+}
+body #header button {
+  width: 20%;
+  margin-left: 65%;
+  background: transparent;
+}
+body #header button:active {
+  opacity: 1;
+}
+body #title {
+  height: 10%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body #title img {
+  width: 70%;
+  margin-left: 20%;
+}
+body #title h1 {
+  font-size: 3rem;
+}
+body #floors {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+}
+body #floors a {
+  border: 4px solid #707070;
+  margin: 5% 0;
+  background: #03658c;
+}
+body #floors a:active {
+  box-shadow: 0 0 5px 5px red;
+}
+body #floors a button {
+  border: none;
+  background: inherit;
+  display: flex;
+  font-size: 2.5rem;
+  margin: auto;
+  font-weight: bold;
+  padding-bottom: 7px;
+  padding: 2.5%;
+}
+body #nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: #f5f5f5;
+  width: 70%;
+  margin-left: 30%;
+  top: 0;
+  bottom: 0;
+  overflow-y: visible;
+  overflow-x: hidden;
+  visibility: hidden;
+}
+body #nav #header {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+body #nav #header p {
+  grid-column: 2;
+  color: #03658C;
+}
+body #nav #header button {
+  margin: 5% auto;
+  font-size: 2rem;
+}
+body #nav #options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+body #nav #options button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  width: 70%;
+  margin: 5% auto;
+  font-size: 2rem;
+  padding: 10%;
+}
+body #nav #options button:active {
+  box-shadow: 0 0 5px 5px red;
+}
+
+#area {
+  display: flex;
+  flex-direction: column;
+}
+#area button {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  margin: 20% auto;
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 5%;
+}
+#area button:active {
+  box-shadow: 0 0 5px 5px red;
+}

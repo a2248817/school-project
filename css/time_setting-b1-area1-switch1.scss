@@ -1,0 +1,60 @@
+@use "./common.scss";
+@use "./lighting_control-b1-area1.scss";
+
+#add_item {
+    position: fixed;
+    bottom: 5%;
+
+    button {
+        @include common.default-button;
+        font-size: 2.5rem;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2.5% 0;
+    }
+}
+
+#item_setting {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    top: 25%;
+    background: #fff;
+
+    >* {
+        height: 20%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin: 5% 0;
+
+        >* {
+            margin: auto;
+        }
+
+        button {
+            @include common.default-button;
+            height: 100%;
+            width: 35%;
+            font-size: 2rem;
+        }
+    }
+
+    visibility: hidden;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    >* {
+        font-size: 2rem;
+        width: auto;
+        justify-content: center;
+        margin: 5% auto;
+        padding: 5% 10%;
+        background: common.$default-button-background-color;
+    }
+}

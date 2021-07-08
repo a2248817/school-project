@@ -1,0 +1,36 @@
+$default-background-color: #111559;
+$default-text-color: #99d9f2;
+$default-button-background-color: #03658c;
+$default-border-color: #707070;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: $default-text-color;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $default-background-color;
+}
+
+html {
+    width: 414px;
+    height: 896px;
+
+}
+
+@mixin default-button {
+    border-radius: 50px;
+    color: $default-text-color;
+    background-color: $default-button-background-color;
+    border: 5px solid $default-border-color;
+
+    &:active {
+        box-shadow: 0 0 5px 5px red;
+    }
+}

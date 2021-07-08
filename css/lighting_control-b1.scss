@@ -1,0 +1,15 @@
+@use "./common.scss";
+@use "./lighting_control.scss";
+
+#area {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        @include common.default-button;
+        margin: 20% auto;
+        font-size: 2.5rem;
+        width: 50%;
+        padding: 5%;
+    }
+}

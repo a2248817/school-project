@@ -1,0 +1,40 @@
+@use "./common.scss";
+
+body {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: common.$default-background-color;
+    #ncut {
+        height: 20%;
+        margin: 10%;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-weight: bold;
+        height: auto;
+        margin: 10%;
+        margin-bottom: 15%;
+        color: common.$default-text-color;
+    }
+
+    div {
+        button {
+            font-size: 2rem;
+            height: 20%;
+            width: 50%;
+            margin: 10%;
+            border-radius: 50px;
+            padding-bottom: 7px;
+            color: common.$default-text-color;
+            background-color: common.$default-button-background-color;
+            &:active {
+                border: 2px solid red;
+            }
+        }
+
+    }
+}

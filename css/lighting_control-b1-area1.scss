@@ -1,0 +1,35 @@
+@use "./common.scss";
+@use "./lighting_control-b1.scss";
+
+#lights {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 80%;
+
+    [id^="light"] {
+        height: 25%;
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            margin:0 5%;
+            #options {
+                display: flex;
+                flex-direction: row;
+                background: common.$default-border-color;
+                border-radius: 15px;
+                margin: auto;
+
+                button {
+                    font-size: 2rem;
+                    padding: 5%;
+                    flex: 1 1 100%;
+                    border-right: 2px solid common.$default-background-color;
+                }
+            }
+        }
+
+    }
+
+}
