@@ -29,6 +29,8 @@ body div {
 }
 body #header {
   height: 10%;
+  margin-top: 25px;
+  padding-right: 20px;
 }
 body #header a {
   font-size: 3rem;
@@ -92,6 +94,9 @@ body #nav {
   overflow-y: visible;
   overflow-x: hidden;
   visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-out;
+  right: -100%;
 }
 body #nav #header {
   display: grid;
@@ -122,9 +127,26 @@ body #nav #options button {
   margin: 5% auto;
   font-size: 2rem;
   padding: 10%;
+  -webkit-animation: 1s linear 0s infinite alternate what;
+          animation: 1s linear 0s infinite alternate what;
 }
 body #nav #options button:active {
   box-shadow: 0 0 5px 5px red;
+}
+body #nav.expand {
+  right: 0%;
+  opacity: 1;
+  background-color: #faa;
+}
+@-webkit-keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
+}
+@keyframes what {
+  100% {
+    box-shadow: 0px 10px 5px 5px #199b7d;
+  }
 }
 
 #area {
