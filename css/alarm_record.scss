@@ -1,0 +1,38 @@
+@use "./common.scss";
+@use "./lighting_control.scss";
+
+#details {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    margin-top: 5%;
+
+    * {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+
+        >* {
+            margin: 5% auto;
+        }
+
+        > :nth-child(odd) {
+            background: common.$default-button-background-color;
+            padding: 2% 4%;
+        }
+    }
+
+    button {
+        @include common.default-button;
+        width: 80%;
+        padding: 2.5% 5%;
+    }
+}

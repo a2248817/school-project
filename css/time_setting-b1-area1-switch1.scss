@@ -42,24 +42,58 @@
         }
     }
 
-    > button{
+    >button {
         margin-left: auto;
         margin-right: 5%;
+        position: relative;
     }
 
     visibility: hidden;
+
+    .time_list {
+        background: red;
+        list-style: none;
+        position: relative;
+        width: 100%;
+        visibility: hidden;
+
+        div {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            height: 35vh;
+            overflow: hidden;
+            overflow-y: scroll;
+
+            li {
+                background: common.$default-border-color;
+                margin: 1%;
+                padding: 5%;
+
+                &:active {
+                    color: aqua;
+                }
+            }
+        }
+    }
 }
 
 #items {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
+
     >* {
+        background: common.$default-button-background-color;
         font-size: 2rem;
-        width: auto;
+        width: 70%;
         justify-content: center;
         margin: 5% auto;
         padding: 5% 10%;
-        background: common.$default-button-background-color;
+
+        &:focus {
+            background: red;
+        }
     }
+
 }

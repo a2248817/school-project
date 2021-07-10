@@ -149,144 +149,39 @@ body #nav.expand {
   }
 }
 
-#area {
+#details {
   display: flex;
   flex-direction: column;
+  height: 75%;
+  margin-top: 5%;
 }
-#area button {
-  border-radius: 50px;
-  color: #99d9f2;
-  background-color: #03658c;
-  border: 5px solid #707070;
-  margin: 20% auto;
+#details * {
   font-size: 2.5rem;
-  width: 50%;
-  padding: 5%;
-}
-#area button:active {
-  box-shadow: 0 0 5px 5px red;
-}
-
-#lights {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-  height: 80%;
-}
-#lights [id^=light] {
-  height: 25%;
-}
-#lights [id^=light] #content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5%;
-}
-#lights [id^=light] #content #options {
-  display: flex;
-  flex-direction: row;
-  background: #707070;
-  border-radius: 15px;
-  margin: auto;
-}
-#lights [id^=light] #content #options button {
-  font-size: 2rem;
-  padding: 5%;
-  flex: 1 1 100%;
-  border-right: 2px solid #111559;
-}
-
-#add_item {
-  position: fixed;
-  bottom: 5%;
-}
-#add_item button {
-  border-radius: 50px;
-  color: #99d9f2;
-  background-color: #03658c;
-  border: 5px solid #707070;
-  font-size: 2.5rem;
-  width: 90%;
-  margin: 0 auto;
-  padding: 2.5% 0;
-}
-#add_item button:active {
-  box-shadow: 0 0 5px 5px red;
-}
-
-#item_setting {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  top: 25%;
-  background: #fff;
-  visibility: hidden;
-}
-#item_setting > * {
-  height: 20%;
   text-align: center;
+  margin-top: 5%;
+}
+#details > div {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  margin: 5% 0;
+  height: 75%;
 }
-#item_setting > * > * {
-  margin: auto;
+#details > div > * {
+  margin: 5% auto;
 }
-#item_setting > * button {
+#details > div > :nth-child(odd) {
+  background: #03658c;
+  padding: 2% 4%;
+}
+#details button {
   border-radius: 50px;
   color: #99d9f2;
   background-color: #03658c;
   border: 5px solid #707070;
-  height: 100%;
-  width: 35%;
-  font-size: 2rem;
+  width: 80%;
+  padding: 2.5% 5%;
 }
-#item_setting > * button:active {
+#details button:active {
   box-shadow: 0 0 5px 5px red;
-}
-#item_setting > button {
-  margin-left: auto;
-  margin-right: 5%;
-  position: relative;
-}
-#item_setting .time_list {
-  background: red;
-  list-style: none;
-  position: relative;
-  width: 100%;
-  visibility: hidden;
-}
-#item_setting .time_list div {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 35vh;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-#item_setting .time_list div li {
-  background: #707070;
-  margin: 1%;
-  padding: 5%;
-}
-#item_setting .time_list div li:active {
-  color: aqua;
-}
-
-#items {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-}
-#items > * {
-  background: #03658c;
-  font-size: 2rem;
-  width: 70%;
-  justify-content: center;
-  margin: 5% auto;
-  padding: 5% 10%;
-}
-#items > *:focus {
-  background: red;
 }

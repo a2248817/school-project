@@ -149,144 +149,66 @@ body #nav.expand {
   }
 }
 
-#area {
+#filter {
   display: flex;
   flex-direction: column;
 }
-#area button {
-  border-radius: 50px;
-  color: #99d9f2;
-  background-color: #03658c;
-  border: 5px solid #707070;
-  margin: 20% auto;
+#filter * {
   font-size: 2.5rem;
-  width: 50%;
-  padding: 5%;
 }
-#area button:active {
-  box-shadow: 0 0 5px 5px red;
-}
-
-#lights {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10%;
-  height: 80%;
-}
-#lights [id^=light] {
-  height: 25%;
-}
-#lights [id^=light] #content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5%;
-}
-#lights [id^=light] #content #options {
-  display: flex;
-  flex-direction: row;
-  background: #707070;
-  border-radius: 15px;
-  margin: auto;
-}
-#lights [id^=light] #content #options button {
-  font-size: 2rem;
-  padding: 5%;
-  flex: 1 1 100%;
-  border-right: 2px solid #111559;
-}
-
-#add_item {
-  position: fixed;
-  bottom: 5%;
-}
-#add_item button {
+#filter > button {
   border-radius: 50px;
   color: #99d9f2;
   background-color: #03658c;
   border: 5px solid #707070;
-  font-size: 2.5rem;
-  width: 90%;
-  margin: 0 auto;
-  padding: 2.5% 0;
-}
-#add_item button:active {
-  box-shadow: 0 0 5px 5px red;
-}
-
-#item_setting {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 50%;
-  top: 25%;
-  background: #fff;
-  visibility: hidden;
-}
-#item_setting > * {
-  height: 20%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  margin: 5% 0;
-}
-#item_setting > * > * {
   margin: auto;
+  padding: 2.5% 5%;
 }
-#item_setting > * button {
-  border-radius: 50px;
-  color: #99d9f2;
-  background-color: #03658c;
-  border: 5px solid #707070;
-  height: 100%;
-  width: 35%;
-  font-size: 2rem;
-}
-#item_setting > * button:active {
+#filter > button:active {
   box-shadow: 0 0 5px 5px red;
 }
-#item_setting > button {
-  margin-left: auto;
-  margin-right: 5%;
+#filter > div {
   position: relative;
 }
-#item_setting .time_list {
-  background: red;
-  list-style: none;
-  position: relative;
-  width: 100%;
-  visibility: hidden;
-}
-#item_setting .time_list div {
+#filter > div > div {
   position: absolute;
   display: flex;
   flex-direction: column;
-  height: 35vh;
-  overflow: hidden;
-  overflow-y: scroll;
+  background-color: #fff;
+  padding: 2.5% 5%;
+  visibility: hidden;
 }
-#item_setting .time_list div li {
-  background: #707070;
-  margin: 1%;
-  padding: 5%;
+#filter > div > div :first-child {
+  margin-left: auto;
 }
-#item_setting .time_list div li:active {
-  color: aqua;
+#filter > div > div :not(:first-child) {
+  border-radius: 50px;
+  color: #99d9f2;
+  background-color: #03658c;
+  border: 5px solid #707070;
+  margin: 6% 0;
+  padding: 2.5% 5%;
+}
+#filter > div > div :not(:first-child):active {
+  box-shadow: 0 0 5px 5px red;
 }
 
-#items {
+#records {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
-}
-#items > * {
-  background: #03658c;
-  font-size: 2rem;
-  width: 70%;
   justify-content: center;
-  margin: 5% auto;
-  padding: 5% 10%;
+  align-items: center;
 }
-#items > *:focus {
-  background: red;
+#records > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 2.5% 0;
+}
+#records > div :not(:first-child) {
+  font-size: 1.5rem;
+}
+#records > :nth-child(odd) {
+  background: #03658c;
 }

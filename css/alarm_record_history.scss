@@ -1,0 +1,63 @@
+@use "./common.scss";
+@use "./lighting_control.scss";
+
+#filter {
+    display: flex;
+    flex-direction: column;
+
+    * {
+        font-size: 2.5rem;
+    }
+
+    >button {
+        @include common.default-button;
+        margin: auto;
+        padding: 2.5% 5%;
+    }
+
+    >div {
+        position: relative;
+
+        >div {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 2.5% 5%;
+            visibility: hidden;
+
+            :first-child {
+                margin-left: auto;
+            }
+
+            :not(:first-child) {
+                @include common.default-button;
+                margin: 6% 0;
+                padding: 2.5% 5%;
+            }
+        }
+    }
+}
+
+#records {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5rem;
+        width: 80%;
+        margin: 2.5% 0;
+
+        :not(:first-child) {
+            font-size: 1.5rem;
+        }
+    }
+
+    > :nth-child(odd) {
+        background: common.$default-button-background-color;
+    }
+}
