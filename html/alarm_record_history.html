@@ -17,60 +17,90 @@
         <img src="../resources/images/NCUT.svg">
         <h1>歷史紀錄</h1>
     </div>
+    <div id="query_result_text">
+        查詢結果
+    </div>
     <div id="filter">
-        <button>條件篩選</button>
+        <button id="filter_menu_expand">條件篩選</button>
         <div>
-            <div>
-            <button>╳</button>
-            <button>位置</button>
-            <button>求救方式</button>
-            <button>發生時間</button>
-            <button>查詢</button>
+            <div id="filter_menu">
+                <button id="filter_menu_collapse">╳</button>
+                <button id="filter_location">位置</button>
+                <div>
+                    <div>
+                        <p>B1-區域1-開關1</p>
+                        <p>B1-區域1-開關2</p>
+                        <p>B1-區域1-開關3</p>
+                        <p>B1-區域1-開關4</p>
+                        <p>B1-區域1-開關5</p>
+                    </div>
+                </div>
+                <button id="filter_method">求救方式</button>
+                <div>
+                    <div>
+                        <p>刷卡求救</p>
+                        <p>按鈕求救</p>
+                    </div>
+                </div>
+                <button id="filter_dateTime">發生時間</button>
+                <div>
+                    <div>
+                        <p>B1-區域1-開關1</p>
+                        <p>B1-區域1-開關2</p>
+                        <p>B1-區域1-開關3</p>
+                        <p>B1-區域1-開關4</p>
+                        <p>B1-區域1-開關5</p>
+                    </div>
+                </div>
+                <button id="query_button">查詢</button>
             </div>
         </div>
     </div>
+
     <div id="records">
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B1-區域1-開關1</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2101-12-31 01:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B2-區域2-開關2</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2102-12-31 02:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B3-區域3-開關3</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2103-12-31 03:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B4-區域4-開關4</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2104-12-31 04:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B5-區域5-開關5</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2105-12-31 05:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B6-區域6-開關6</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2106-12-31 06:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B7-區域7-開關7</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2107-12-31 07:59:59</p>
         </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
-        </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
-        </div>
-        <div>
-            <p>紀錄紀錄紀錄紀錄</p>
-            <p>紀錄紀錄紀錄紀錄</p>
+        <div class="record_item">
+            <p class="location">B8-區域8-開關8</p>
+            <p class="method">刷卡求救</p>
+            <p class="dateTime">2108-12-31 08:59:59</p>
         </div>
     </div>
+
+    <script src="../js/alarm_record_history.js"></script>
 </body>
 
 </html>

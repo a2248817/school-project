@@ -75,7 +75,7 @@ add_item_btn.addEventListener(`click`, evt =>
         if (v == null) return;
     });
     let item = document.createElement(`button`);
-    item.innerHTML = `${values[0]}:${values[2]}到${values[1]}:${values[3]}`;
+    item.innerHTML = `${values[0]}:${values[2]} 到 ${values[1]}:${values[3]}`;
     document.querySelector("#items").appendChild(item);
     evt.stopPropagation();
 });

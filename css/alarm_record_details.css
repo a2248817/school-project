@@ -149,98 +149,15 @@ body #nav.expand {
   }
 }
 
-#filter {
+#details {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
-}
-#filter * {
   font-size: 2.5rem;
 }
-#filter > button {
-  border-radius: 50px;
-  color: #99d9f2;
+#details > * {
+  margin: 5% auto;
+}
+#details > :nth-child(odd) {
   background-color: #03658c;
-  border: 5px solid #707070;
-  margin: auto;
-  padding: 2.5% 5%;
-}
-#filter > button:active {
-  box-shadow: 0 0 5px 5px red;
-}
-#filter > div {
-  position: relative;
-}
-#filter > div > div {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 5%;
-  visibility: hidden;
-}
-#filter > div > div > button:not(:first-child) {
-  border-radius: 50px;
-  color: #99d9f2;
-  background-color: #03658c;
-  border: 5px solid #707070;
-  margin-top: 10%;
-  padding: 2.5% 5%;
-}
-#filter > div > div > button:not(:first-child):active {
-  box-shadow: 0 0 5px 5px red;
-}
-#filter > div > div > :first-child {
-  margin-left: auto;
-}
-
-#records {
-  display: flex;
-  flex-direction: column;
-  padding: 5% 10%;
-}
-#records > :nth-child(odd) {
-  background: #03658c;
-}
-#records > :nth-child(even) {
-  background: #707070;
-}
-#records > .record_item {
-  font-size: 1.2rem;
-  display: grid;
-  grid-template-rows: 3fr 2fr;
-  grid-template-columns: 2fr 3fr;
-  margin-top: 5%;
-}
-#records > .record_item:active {
-  background: red;
-}
-#records > .record_item > * {
-  margin: auto;
-}
-#records > .record_item > .location {
-  font-size: 2.5rem;
-  grid-column: span 2;
-}
-
-#filter_menu > div {
-  visibility: hidden;
-  position: relative;
-  width: 100%;
-}
-#filter_menu > div > div {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-}
-#filter_menu > div > div > * {
-  margin-top: 1px;
-  background: #707070;
-}
-
-#query_result_text {
-  width: auto;
-  margin: 0 auto;
-  font-size: 2rem;
-  display: none;
+  width: 50%;
 }
