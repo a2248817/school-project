@@ -278,6 +278,7 @@ body #nav.expand {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
+  padding-bottom: 35%;
 }
 #items > * {
   background: #03658c;
